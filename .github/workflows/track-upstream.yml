@@ -1,5 +1,10 @@
 name: Track official Bifrost image
 on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/track-upstream.yml
+      - scripts/track-upstream.py
   schedule:
     - cron: '23 */6 * * *'
   workflow_dispatch:
