@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Container version="2">
+  <Name>bifrost-ai-gateway</Name>
+  <Repository>maximhq/bifrost:latest</Repository>
+  <Registry>https://hub.docker.com/r/maximhq/bifrost</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/nisgoswami/unraid-templates/issues</Support>
+  <Project>https://github.com/maximhq/bifrost</Project>
+  <ReadMe>https://github.com/nisgoswami/unraid-templates/blob/main/README.md</ReadMe>
+  <Overview>Bifrost AI Gateway by Maxim provides an OpenAI-compatible API for multiple AI providers, with model routing, fallbacks, virtual keys and a web dashboard. This community template runs the unmodified official maximhq/bifrost image. Configure the gateway through its web interface after installation.</Overview>
+  <Category>AI:</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/nisgoswami/unraid-templates/main/templates/bifrost-ai-gateway.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/maximhq/bifrost/main/docs/favicon.png</Icon>
+  <Config Name="Web UI and API" Target="8080" Default="8080" Mode="tcp" Description="HTTP port for the Bifrost web dashboard and API. Change the host port if it is already in use." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Appdata" Target="/app/data" Default="/mnt/user/appdata/bifrost-ai-gateway" Mode="rw" Description="Persistent gateway data. Configure the application after installation using its web dashboard." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bifrost-ai-gateway</Config>
+</Container>
