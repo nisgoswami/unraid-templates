@@ -27,3 +27,11 @@ This is **Bifrost AI Gateway by Maxim**, not the unrelated Bifrost smart-home hu
 ## License
 
 The template and repository documentation are MIT licensed. The upstream application and its artwork retain their respective upstream licenses and ownership. The application icon is referenced directly from the upstream repository.
+
+## Automatic upstream tracking
+
+GitHub Actions checks the official Docker Hub `maximhq/bifrost:latest` image every six hours and can also be run manually. When its manifest digest changes, the workflow records the digest in `upstream-image.json` and updates the template's changelog. Unchanged images produce no commit. The template continues to use the official `latest` tag; no container is built or repackaged here.
+
+This tracks published images, not individual upstream GitHub commits. The workflow uses GitHub's built-in repository token and anonymous read access to Docker Hub; it needs no personal or server credentials. It does not connect to Unraid or change any running container. Community Apps can ingest the updated template through its normal catalog processing, without a new submission. Actual container installation follows each Unraid server's own update settings.
+
+GitHub schedules are best-effort and may be delayed. GitHub can disable scheduled workflows in public repositories after 60 days without repository activity; re-enable the workflow in Actions if necessary.

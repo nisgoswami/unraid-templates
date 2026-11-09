@@ -1,0 +1,6 @@
+{
+  "image": "maximhq/bifrost:latest",
+  "digest": "sha256:b5258c5f11c79064fc8280e49513f54c0b1da81c78bd11d3b4c1f62f8926d1ab",
+  "detected_at": "2026-11-09T00:50:37+00:00",
+  "upstream": "https://github.com/maximhq/bifrost"
+}
