@@ -17,8 +17,8 @@
   <Icon>https://raw.githubusercontent.com/maximhq/bifrost/main/docs/favicon.png</Icon>
   <Config Name="Web UI and API" Target="8080" Default="8080" Mode="tcp" Description="HTTP port for the Bifrost web dashboard and API. Change the host port if it is already in use." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Appdata" Target="/app/data" Default="/mnt/user/appdata/bifrost-ai-gateway" Mode="rw" Description="Persistent gateway data. Configure the application after installation using its web dashboard." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bifrost-ai-gateway</Config>
-  <Changes>Official upstream image last detected on 2026-11-09 (UTC).
+  <Changes>Official upstream image last detected on 2026-11-10 (UTC).
 Image: maximhq/bifrost:latest
-Digest: sha256:b5258c5f11c79064fc8280e49513f54c0b1da81c78bd11d3b4c1f62f8926d1ab
+Digest: sha256:5ec9873acaf1687556b6e4dd854b92b539d9debf87a5a683b66338648b84d3c8
 See https://github.com/maximhq/bifrost/releases for upstream release notes.</Changes>
 </Container>
